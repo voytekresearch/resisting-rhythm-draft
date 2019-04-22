@@ -20,6 +20,7 @@
 \usepackage{lineno}  % For reviewers
 \usepackage{authblk}
 \usepackage{blindtext}
+\usepackage{fancyhdr}
 
 % Use pretty font
 \usepackage[scaled]{palatino}
@@ -29,14 +30,8 @@
 % big letter
 \usepackage{lettrine}
 
-
-% Make a pretty abstract box...
-% \renewenvironment{abstract}
-% {\begin{quote}
-% \noindent \rule{\linewidth}{.5pt}\par{\bfseries \abstractname.}}
-% {\medskip\noindent \rule{\linewidth}{.5pt}
-% \end{quote}
-% }
+\pagestyle{fancy}
+\rhead{Homeostasis and oscillations}
 
 % -----------------------------------------------------
 % -----------------------------------------------------
@@ -57,7 +52,7 @@
 
 \begin{document}
 \maketitle
-% \linenumbers
+\linenumbers
 % -----------------------------------------------------
 % -----------------------------------------------------
 % -----------------------------------------------------
@@ -68,8 +63,11 @@ Neural oscillations are observed ubiquitously in the mammalian brain. However th
 % -----------------------------------------------------
 % -----------------------------------------------------
 % -----------------------------------------------------
+\noindent
+\textsc{\textbf{New and Noteworthy}} In a model of hippocampal neurons we report a paradoxical result: Ca\textsuperscript{2+}-mediated homeostasis causes normally synchronizing AMPAergic oscillations to become inhibitory and desynchronizing. We conjecture this could be why the theta rhythm is inhibitory. In pyramidal cells GABA doesn't generate new action potentials and so provokes no homeostatic response. The intricate interplay of neuromodulators, like acetylcholine, with homeostasis is well known. The interplay between oscillations and homeostasis might be as complex, and as important.
+
 \section*{Introduction}
-\lettrine[loversize=0,nindent=0,realheight=true]{N}{euromodulation\ and\ homeostasis} are inter-linked but opposing phenomena. Modulation perturbs excitability, which we define as the propensity for a stimulus to elicit an action potential. Homeostasis acts to this quench perturbation, driving the excitability of the cell back to a biologically desirable set point \cite{LeMasson1993,Abbott1993}. While the interplay between chemical modulators and homeostasis has been studied for more than 20 years \cite{LeMasson1993,Abbott1993,Golowasch1999,Marder2014,Marder2015,Gutierrez2013}, the relationship between network-level synaptic modulations--like neural oscillations--and homeostasis is not well understood, on either theoretical or empirical grounds. Like neuromodulators, neural oscillations alter excitability and firing statistics. Uniquely, though, oscillations create synchronous windows of activity \cite{Lisman2013,Voytek2015}. Temporally grouping action potentials into windows improves signal to noise and increases the number of coincident firing events \cite{Chen2013,Zhou2015,Voytek2015a,Peterson2017}, driving learning at individual synapses \cite{Muller2011,Song2000,Markram1997}. 
+\lettrine[loversize=0,nindent=0,realheight=true]{N}{} euromodulation and homeostasis are inter-linked but opposing phenomena. Modulation perturbs excitability, which we define as the propensity for a stimulus to elicit an action potential. Homeostasis acts to this quench perturbation, driving the excitability of the cell back to a biologically desirable set point \cite{LeMasson1993,Abbott1993}. While the interplay between chemical modulators and homeostasis has been studied for more than 20 years \cite{LeMasson1993,Abbott1993,Golowasch1999,Marder2014,Marder2015,Gutierrez2013}, the relationship between network-level synaptic modulations--like neural oscillations--and homeostasis is not well understood, on either theoretical or empirical grounds. Like neuromodulators, neural oscillations alter excitability and firing statistics. Uniquely, though, oscillations create synchronous windows of activity \cite{Lisman2013,Voytek2015}. Temporally grouping action potentials into windows improves signal to noise and increases the number of coincident firing events \cite{Chen2013,Zhou2015,Voytek2015a,Peterson2017}, driving learning at individual synapses \cite{Muller2011,Song2000,Markram1997}. 
 
 We prepose the same mechanisms that link homeostasis with chemical neuromodulation can also come into play during oscillatory modulation. After all, both kinds of modulation lead to tonic changes in spiking and in Ca\textsuperscript{2+} concentration, which can in turn drives changes to intrinsic homeostasis \cite{Liu1998}. 
 
